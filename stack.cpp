@@ -112,23 +112,22 @@ int main()
 		case 1:
 			cout<<"Enter an item to push in the stack: ";
 			cin>>value;
-			cout<<s.push(value);
-			cout<<endl;
+			s.push(value);
 			break;
 	    case 2:
 	    	cout<<"Pop Function is called- Poped value: ";
-			cout<<s.pop();
+			cout<<s.pop()<<endl;
 	    	break;
 		case 3:
-	    	cout<<s.isEmpty();
+	    	cout<<s.isEmpty()<<endl;
 	    	break;
 	    case 4:
-	    	cout<<s.isFull();
+	    	cout<<s.isFull()<<endl;
 	    	break;
 	    case 5:
 	    	cout<<"Enter Position for peek: ";
 	    	cin>>pos;
-	    	cout<<s.peak(pos);
+	    	cout<<s.peak(pos)<<endl;
 	    	break;
 	    case 6:
 	    	cout<<"Number of elements in stack is: "<<s.coutn()<<endl;
@@ -136,7 +135,7 @@ int main()
 	    case 7:
 	    	cout<<"Enter position and value to change: ";
 	    	cin>>pos>>value;
-	    	cout<<s.change(pos,value);
+	    	s.change(pos,value);
 	    	break;
 	    case 8:
 	    	s.display();
@@ -146,7 +145,7 @@ int main()
 	    	break;
 	    default:
 	    	cout<<"Please enter valid choice:"<<endl;
-	    	
+	    	break;
 	    	
 		}
     }while(option!=0);
