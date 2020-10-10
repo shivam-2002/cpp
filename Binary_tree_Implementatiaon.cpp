@@ -20,6 +20,8 @@ node *create()
 	else
 	{
 		newnode->data=x;
+		newnode->left=NULL;
+		newnode->right=NULL;
 		cout<<"Enter left child of "<<x<<" : ";
 		newnode->left=create();
 		cout<<"Enter left child of "<<x<<" : ";
